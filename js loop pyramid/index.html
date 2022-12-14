@@ -1,0 +1,15 @@
+<script>
+    const a = Number(prompt('too oruulna uu '))
+    let output = ''
+    for(let i = 1 ; i <= a ; i++){
+        for(let j = 1 ; j <= a-i; j++){
+            output += ' '
+        }
+        for(let k = 1 ; k <= i ; k++){
+            output += '*'  
+            output +=' '
+        }
+        output += '\n'
+    }
+    console.log(output)
+</script>
