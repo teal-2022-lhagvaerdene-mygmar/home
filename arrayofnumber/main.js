@@ -17,3 +17,4 @@ for(let j = 0 ; j < arrayOfNumbers.length ; j++){
 arrayOfNumbers = 12 +',' + arrayOfNumbers + ',' + 12345
 console.log(arrayOfNumbers)
 
+

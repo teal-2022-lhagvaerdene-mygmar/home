@@ -1,0 +1,83 @@
+<script>
+    //1
+    let a = Number(prompt('dungee oruulna uu'))
+    if( a < 60){
+        console.log('F')
+    }else if(a < 70){
+
+        console.log('D')
+    }else if(a < 80){
+        console.log('C');
+    }else if(a < 90){
+        console.log("B");
+    }else{
+        console.log('A')
+    }
+    //2
+    let n = Number(prompt('sariin too oruulna uu'))
+    if(n == 12 || n == 10 || n == 8 || n == 7 || n == 5 || n == 3 || n == 1){
+        console.log('31 honogtoi')
+    }else if(n == 2){
+        console.log('29 or 29 honogtoi')
+    }else{
+        console.log('30 honogtoi');
+    }
+    //3
+    let k = Number(prompt('eyreg too oruulna uu'))
+    if(k % 3 == 0 && k % 7 == 0){
+        console.log(k,"ni 3 ; 7 iin urjver")
+    }else if(k % 3 == 0){
+        console.log(k , 'ni 3 iin urjver');
+    }else if(k % 7 == 0){
+        console.log(k , ' ni 7 iin urjver ');
+    }else{
+        console.log(k ,  'ni ymarvaa tooniii urjver');
+    }
+    //4
+    let i = Number(prompt('too oruulna uu'))
+    if(i < 0){
+        console.log(i , 'ni sorog too');
+    }else{
+        console.log(i , 'ni eyreg too');
+    }
+    //5
+    let heigth = Number(prompt('ondor oruulna uu'))
+    let weigth = Number(prompt('jingee oruulna uu'))
+    let bieiinIndex = 0
+    bieiinIndex = weigth / ((heigth/100) * (heigth/100))
+    if(18.5 > bieiinIndex){
+        console.log('jingiiin dutagtaltai')
+    }else if( 25 > bieiinIndex ){
+        console.log('eruul');
+    }else if(30 > bieiinIndex){
+        console.log('iluudel jintei');
+    }else{
+        console.log('het targalalttai');
+    }
+    //6
+    let j = Number(prompt('too oruulanuu'))
+    if(j % 2 == 0){
+        console.log('tegsh too');
+    }else{
+        console.log('sondgoi too');
+    }
+    //8 
+    let t = Number(prompt('too oruulna uu'))
+    let nas = 0 
+    nas = 2022 - t
+    if(nas <= 1){
+        console.log('infant');
+    }else if(nas <= 3){
+        console.log('toddler')
+    }else if(nas <= 5){
+        console.log('preschool');
+    }else if (nas <= 12 ){
+        console.log('gradeschooler');
+    }else if(nas <= 18){
+        console.log('teen');
+    }else if(nas <= 21 ){
+        console.log('young adult');
+    }else{
+        console.log('adult');
+    }
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let phone = prompt('phone number')
+    if(8 == phone.length){
+        if(88 == phone.substr(0 , 2) || 86 == phone.substr(0 , 2) || 80 ==phone.substr(0 , 2)){
+            console.log('unitel number')
+        }else if(99 == phone.substr(0 , 2) || 95 == phone.substr(0 , 2) || 90 == phone.substr(0 , 2)){
+            console.log('mobicom number')
+        }else if(70 == phone.substr(0 , 2) || 98 == phone.substr(0 , 2) ){
+            console.log('g mobile number')
+        }else if (96 == phone.substr(0 , 2) ){
+            console.log('skytel number')
+        }else {
+            console.log('medehgui dugaar baina')
+        }
+    }else{
+        console.log('buruu dugaar baina')
+    }
+    
+</script>

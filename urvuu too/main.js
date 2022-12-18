@@ -1,7 +1,7 @@
 // urvuu too
-let too = '65123'
+let too = prompt('too oruulna uu ')
 let output = ''
-for(let j = 0 ; j <too.length ; j++){
-    
+for(let j = too.length - 1 ; j >= 0; j--){
+    output += too[j]
 }
 console.log(output)
