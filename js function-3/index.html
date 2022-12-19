@@ -1,0 +1,27 @@
+<script>
+    function too1(a,b){
+        let array = []
+        for(let k = a ; k <= b ; k++){
+            if(k % 2 == 0){
+                array += k
+                array += ' '
+            }
+        }
+        return array
+    }
+    console.log(too1(2, 20))
+    function too2(a,b){
+        let array = []
+        for(let k = a ; k <= b ; k++){
+            for(let i = 0 ; i < (b-a)/2 ; i++){
+                if(k % 2 == 1 ){
+                    array[i] += k
+                }
+            } 
+        }
+        return array
+    }
+    
+    console.log(too2(2, 20))
+
+</script>
