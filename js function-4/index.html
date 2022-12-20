@@ -1,0 +1,14 @@
+<script>
+    function tolbor(a){
+        if(a < 5000){
+            return a + (a * 0.2)
+        }else if(a <= 30000){
+            return a + (a * 0.15)
+        }else{
+            return a + (a * 0.2) 
+        }
+    }
+    console.log(tolbor(3000))
+    console.log(tolbor(27500))
+    console.log(tolbor(100000))
+</script>

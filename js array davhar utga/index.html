@@ -1,13 +1,12 @@
 <script>
     let array1 =  [4, 2, 34, 4, 1, 12, 1, 4]
     let arr = []
-    for(let k = 0 ; k < array1.length ; k++){
-        for(let i = 0 ; i < array1.length ; i ++){
+    for(let k = 3 ; k < array1.length ; k++){
+        for(let i = k + 1 ; i < array1.length ; i ++){
             if(array1[k] == array1[i]){
-                arr[k]= array1[k]
+               arr += array1[k] + ' '
             }
         }
     }
     console.log(arr)
-    
 </script>

@@ -12,16 +12,14 @@
     console.log(too1(2, 20))
     function too2(a,b){
         let array = []
-        for(let k = a ; k <= b ; k++){
-            for(let i = 0 ; i < (b-a)/2 ; i++){
-                if(k % 2 == 1 ){
-                    array[i] += k
-                }
-            } 
-        }
+        for(let i = a ; i <= b; i++){
+            if(i % 2 == 1 ){
+                array += i  + ' '
+            }
+        } 
         return array
     }
     
-    console.log(too2(2, 20))
+    console.log(too2(3, 30))
 
 </script>

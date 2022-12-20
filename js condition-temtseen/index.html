@@ -1,0 +1,25 @@
+<script>
+    let a1 = 96
+    let a2 = 108
+    let a3 = 96
+    let b1 = 88
+    let b2 = 91
+    let b3 = 110
+    let adundaj = (a1 + a2 + a3 ) / 3
+    let bdundaj = (b1 + b2 + b3 ) / 3
+    if(adundaj > 100 && bdundaj > 100){
+        if(adundaj == bdundaj ){
+            console.log('baguud tentssen');
+        }else if(adundaj > bdundaj){
+            console.log('a team turuulsen')
+        }else{
+            console.log('b team turuulsen')
+        }
+    }else if(adundaj < 100 && bdundaj < 100){
+        console.log('ylagch bhgui')
+    }else if(adundaj < bdundaj && bdundaj > 100){
+        console.log('b team turuulsen')
+    }else{
+        console.log("a team turuulsen");
+    }
+</script>
