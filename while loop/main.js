@@ -32,18 +32,18 @@ console.log('5 daalgavar')
  console.log(niilber)
  console.log('6 daalgavar')
 let input = prompt('too oruulna uu')
-output = false55
+let count = false
 Number(input)
 if(input == 1){
     console.log(input ,'it is not prime number')
 }else if(input > 1){
     for(let i = 2 ; i < input ; i++){
        if(input % i == 0){
-        output = true
+        count = true
         break
        }
     }
-    if(output == true){
+    if(count == true){
         console.log(input,'anhnii too bish')
     }else{
         console.log(input, 'anhnii too mon')
@@ -53,4 +53,20 @@ else{
     console.log(input,'anhnii too bish')
 }
 console.log('daalgavar 7')
-
+let prime1 = 2
+let prime = 2
+let shalgah 
+while(prime < 50 ){
+    while(prime1 < prime){
+        if(prime % prime1 == 0){
+            shalgah = true
+        }else[
+            shalgah = false
+        ]
+        prime1++
+    }
+    if(shalgah ==true){
+        console.log(prime)
+    }
+    prime++
+}
