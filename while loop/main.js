@@ -53,20 +53,4 @@ else{
     console.log(input,'anhnii too bish')
 }
 console.log('daalgavar 7')
-let prime1 = 2
-let prime = 2
-let shalgah 
-while(prime < 50 ){
-    while(prime1 < prime){
-        if(prime % prime1 == 0){
-            shalgah = true
-        }else[
-            shalgah = false
-        ]
-        prime1++
-    }
-    if(shalgah ==true){
-        console.log(prime)
-    }
-    prime++
-}
+

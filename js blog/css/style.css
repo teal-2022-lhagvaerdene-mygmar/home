@@ -1,0 +1,24 @@
+.card-flex{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+#card-head{
+    width: 700px;
+    position: absolute;
+    left: 300px; 
+}
+.card-foot{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+}
+#card-f{
+    position: absolute;
+    top: 1170px;
+    left: 500px;
+}
+h3{
+    position:relative;
+    left: 20px;
+}
