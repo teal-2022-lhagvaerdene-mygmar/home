@@ -1,16 +1,18 @@
-fetch('https://dummyjson.com/posts')
+fetch('https://dummyjson.com/users')
 .then((res) => res.json())
 .then((data) => {
-    const one = data.posts.filter((item1, index) => index < 1  )
+    const one = data.users.filter((item1, index) => index < 5)
+    console.log(data.users)
     console.log(one)
     const onep = one
     .map(
         (item1) =>
-                `<p> 
-                    <a href="single.html?id=${item1.id}">
-                    ${item1.title}
+                `
+                <li id="js"> 
+                    <a href="simple.html?id=${item1.id}">
+                    ${item1.lastName}
                     </a>
-                </p>`
+                </li>`
     ).join('')
     document.getElementById('card-para').innerHTML = onep
 

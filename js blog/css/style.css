@@ -22,3 +22,26 @@ h3{
     position:relative;
     left: 20px;
 }
+#simple2{
+    background-image: url(https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg);
+    background-repeat: no-repeat;
+    width: 500px;
+}
+
+#article{
+    display: flex;
+    gap: 40px;
+    margin: 50px;
+    color: white;
+}
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    margin-top: 20px;
+}

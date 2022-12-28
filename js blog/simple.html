@@ -4,9 +4,43 @@
         <title>Blog </title>
         <link rel="stylesheet" href="css/style.css">
     </head>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
     <body>
-        <div id="blog"></div>
-        <script src="js/main.js"></script>
+        <div id="article"></div>
+        <img src="" alt="">
+        <script>
+            const query = window.location.search
+            const id = query.split('=')[1]
+            fetch(`https://dummyjson.com/users/${id}`)
+            .then((res) => res.json())
+            .then((data) => {
+                const articlehmtl = `<div>
+                                        <img src="${data.image}" alt="" width="330px" >
+                                    </div>
+                                    <div id="hi${data.id}">
+                                        <h1>${data.firsName ,data.lastName}</h1>
+                                        <ul>
+                                            <li> age: ${data.age} </li>
+                                            <li> age: ${data.gender} </li>
+                                            <li> age: ${data.email} </li>
+                                            <li> age: ${data.phone} </li>
+                                            <li> age: ${data.birthDate} </li>
+                                            <li> age: ${data.bloodGroup} </li>
+                                            <li> age: ${data.height}sm </li>
+                                            <li> age: ${data.weight}kg </li>
+                                            <li> age: ${data.address.city} </li>
+                                            <li> age: ${data.company.department} </li>
+                                        </ul>
+                                    </div>`
+                
+                document.getElementById('article').innerHTML = articlehmtl
+            })
+
+        </script>
     </body>
 
 </html>
