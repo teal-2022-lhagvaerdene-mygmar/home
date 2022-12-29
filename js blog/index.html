@@ -15,14 +15,37 @@
                   
                 </div>
             </div>
-            <a href="simple.html?page=1">1</a>
-            <a href="simple.html?page=2">2</a>
-            <a href="simple.html?page=3">3</a>
-            <a href="simple.html?page=4">4</a>
-            <a href="simple.html?page=5">5</a>
+            <a href="index.html?page=1">1</a>
+            <a href="index.html?page=2">2</a>
+            <a href="index.html?page=3">3</a>
+            <a href="index.html?page=4">4</a>
+            <a href="index.html?page=5">5</a>
         </header>
-        <script src="js/main.js">
-            
+        <script>
+            const query = window.location.search
+                const page = Number(query.split('=')[1])
+                const size = 5
+                console.log(query)
+                console.log(page)
+                fetch('https://dummyjson.com/users')
+                .then((res) => res.json())
+                .then((data) => {
+                    const one = data.users.filter((item, index) => index >= (page-1) * size && index < page * size)
+                    // console.log(data.users)
+                    console.log(one)
+                    const onep = one
+                    .map(item1 =>
+                                    `
+                                        <li id="js"> 
+                                            <a href="simple.html?id=${item1.id}">
+                                            ${item1.lastName}
+                                            </a>
+                                        </li>`
+                    )
+                    .join('')
+                    document.getElementById('card-para').innerHTML = onep
+
+})  
         </script>
     </body>
 </html>

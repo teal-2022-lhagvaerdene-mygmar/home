@@ -14,7 +14,8 @@
         <img src="" alt="">
         <script>
             const query = window.location.search
-            const id = query.split('=')[1]
+            const id = Number(query.split('=')[1])
+            console.log(query)
             fetch(`https://dummyjson.com/users/${id}`)
             .then((res) => res.json())
             .then((data) => {

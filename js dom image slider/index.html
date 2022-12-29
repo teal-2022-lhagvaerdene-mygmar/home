@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Galaxy slider
+        </title>
+        <style>
+            .card{
+                display: flex;
+                gap: 10px;
+            }
+            img{
+                width: 200px;
+                height: 400px;
+                border-radius: 10px;
+                transition: 1s linear;
+            }
+            #card-image{
+                width: 400px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div>
+                <img src="alex-fxrwJGMCz_g-unsplash.jpg" alt="1" onclick="tomruulah()" id="card-image">
+            </div>
+            <div>
+                <img src="jeremy-thomas-4dpAqfTbvKA-unsplash.jpg" alt="2" onclick="tomruulah1()" id="card-image2">
+            </div>
+            <div>
+                <img src="jeremy-thomas-E0AHdsENmDg-unsplash.jpg" alt="3" onclick="tomruulah2()" id="card-image3">
+            </div>
+            <div>
+                <img src="nasa-rTZW4f02zY8-unsplash.jpg" alt="4" onclick="tomruulah3()" id="card-image4">
+            </div>
+            <div>
+                <img src="raphael-nogueira-svbDI1Pq30s-unsplash.jpg" alt="5" onclick="tomruulah4()" id="card-image5">
+            </div>
+        </div>
+        <script>
+            const image  = document.getElementById('card-image')
+            const image1 = document.getElementById('card-image2')
+            const image2 = document.getElementById('card-image3')
+            const image3 = document.getElementById('card-image4')
+            const image4 = document.getElementById('card-image5')
+            function tomruulah(){
+                image.style.width = '400px'
+                image1.style.width = '200px'
+                image2.style.width = '200px'
+                image3.style.width = '200px'
+                image4.style.width = '200px'
+            }
+            function tomruulah1(){
+                image2.style.width = '200px'
+                image1.style.width = '400px'
+                image.style.width = '200px'
+                image3.style.width = '200px'
+                image4.style.width = '200px'
+            }
+            function tomruulah2(){
+                image1.style.width = '200px'
+                image2.style.width = '400px'
+                image3.style.width = '200px'
+                image.style.width = '200px'
+                image4.style.width = '200px'
+               
+            }
+            function tomruulah3(){
+                image2.style.width = '200px'
+                image3.style.width = '400px'
+                image4.style.width = '200px'
+                image.style.width = '200px'
+                image1.style.width = '200px'
+            
+            }
+            function tomruulah4(){
+                image4.style.width = '400px'
+                image3.style.width = '200px'
+                image.style.width = '200px'
+                image1.style.width = '200px'
+                image2.style.width = '200px'
+                
+            }
+            
+
+        </script>
+    </body>
+</html>
